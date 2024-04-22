@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>QR Code</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>QR Code Generator 🔥</h1>
+      <h2>Insert a link bellow to generate a QR Code</h2>
+    </div>
+    <form action="/" method="POST">
+      <input type="text" name="link" placeholder="https://example.com" />
+      <button type="submit">Generate QR</button>
+    </form>
+  </body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0 10rem;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .title h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  input {
+    width: 20rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  button {
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+  }
+
+  button:hover {
+    background-color: #0069d9;
+  }
+</style>
