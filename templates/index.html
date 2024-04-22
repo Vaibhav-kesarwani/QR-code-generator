@@ -15,6 +15,12 @@
       <input type="text" name="link" placeholder="https://example.com" />
       <button type="submit">Generate QR</button>
     </form>
+    {% if data %}
+    <div class="generated">
+      <img src="{{ data }}" />
+      <p>Here is the QR code generated for you 🚀</p>
+    </div>
+    {% endif %}
   </body>
 </html>
 
@@ -86,5 +92,12 @@
 
   button:hover {
     background-color: #0069d9;
+  }
+
+  .generated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 </style>
